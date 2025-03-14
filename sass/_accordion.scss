@@ -1,0 +1,47 @@
+.accordion {
+    background-color: transparent;
+    border: none;
+
+    .accordion-item {
+        background-color: transparent;
+        border: none;
+
+        .accordion-header {
+            background-color: transparent;
+            
+            .accordion-button {
+                background-color: transparent;
+                border: none;
+                box-shadow: initial;
+                font-family: 'Rufina', Verdana, Geneva, Tahoma, sans-serif;
+                text-transform: uppercase;
+                color: var(--text-color);
+                font-size: 20px;
+
+                &:after {
+                    background-image: url("../images/icons/expand-more.svg");
+                }
+
+                &:not(.collapsed) {
+                    color: var(--text-color);
+                    
+                    &:after {
+                        background-image: url("../images/icons/expand-more.svg");
+                    }
+                }
+            }
+        }
+
+        .accordion-collapse {
+            .accordion-body {
+                font-family: 'Rufina', Verdana, Geneva, Tahoma, sans-serif;
+                color: var(--text-color);
+                line-height: 1.4;
+            }
+        }
+        
+        &:first-of-type, &:last-of-type {
+            border-radius: 0;
+        }
+    }
+}
