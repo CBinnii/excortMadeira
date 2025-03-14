@@ -80,7 +80,7 @@
     }
 
     .section-about {
-        background: #FFFFFF;
+        background: var(--background-color);
         padding-bottom: 56px;
 
         .image-about-us {
@@ -144,8 +144,8 @@
     }
 
     .section-why {
-        background: var(--background-color);
-        padding-bottom: 56px;
+        background: #FFFFFF;
+        padding: 56px 0;
 
         .image-about-us {
             height: 100%;
@@ -163,12 +163,15 @@
 
         h3 {
             font-family: 'Rufina', Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 24px;
+            font-size: 56px;
+            text-shadow: 0 8px 3px rgba(0, 0, 0, .2);
             text-transform: uppercase;
-            margin-bottom: 32px;
-
+            margin-bottom: 24px;
+            color: var(--text-color);
+            text-align: left;
+    
             @media screen and (max-width: 991px) {
-                font-size: 18px;
+                font-size: 32px;
             }
         }
 
@@ -207,7 +210,7 @@
 
     .section-topexcorts {
         min-height: 500px;
-        background: var(--background-color);
+        background: #FFFFFF;
         padding-bottom: 56px;
 
         .excort-box {
@@ -264,8 +267,72 @@
         }
     }
 
-    .section-faq {
+    .section-seo {
         background: #FFFFFF;
+        padding-bottom: 56px;
+
+        .image-about-us {
+            height: 100%;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 12px;
+            }
+        }
+
+        h3 {
+            font-family: 'Rufina', Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 24px;
+            text-transform: uppercase;
+            margin-bottom: 32px;
+            text-align: center;
+
+            @media screen and (max-width: 991px) {
+                font-size: 18px;
+            }
+        }
+
+        p {
+            text-align: center;
+            font-family: 'Rufina', Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 16px;
+            line-height: 1.4;
+            letter-spacing: 0px;
+            color: var(--text-color);
+            opacity: 1;
+            margin-bottom: 8px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+
+            @media screen and (max-width: 767px) {
+                font-size: 14px;
+            }
+
+            a {
+                color: var(--text-color);
+                font-weight: 500;
+            }
+        }
+
+        .text-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: #f6cd7e;
+            text-align: center;
+        }
+    }
+
+    .section-faq {
+        background: var(--background-color);
 
         .faq-title {
             padding: 56px 0;
@@ -286,7 +353,7 @@
         }
 
         .faq {
-            padding: 56px 0;
+            padding-bottom: 56px;
         }
     }
 }
