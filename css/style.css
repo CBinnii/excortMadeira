@@ -22308,11 +22308,11 @@ a.button {
 }
 
 .swiper-button-next-slider-home {
-  background-image: url("../images/icons/arrow-next.svg");
+  background-image: url("../images/icons/next.svg");
 }
 
 .swiper-button-prev-slider-home {
-  background-image: url("../images/icons/arrow-prev.svg");
+  background-image: url("../images/icons/prev.svg");
 }
 
 .header {
@@ -22656,6 +22656,17 @@ a.button {
   width: 100%;
   height: 100%;
 }
+.section .section-banner .background-video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
 .section .section-banner .container {
   height: 100%;
   display: flex;
@@ -22823,6 +22834,35 @@ a.button {
   color: #f6cd7e;
   text-align: center;
 }
+.section .section-why .points {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+  border: 1px solid var(--button-color);
+  padding: 16px;
+  border-radius: 12px;
+}
+.section .section-why .points:hover {
+  background-color: var(--background-color);
+}
+.section .section-why .points .icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 16px;
+}
+.section .section-why .points .icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section .section-why .points h4, .section .section-why .points .h4 {
+  text-align: center;
+  font-family: "Rufina", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
 .section .section-topexcorts {
   min-height: 500px;
   background: #FFFFFF;
@@ -22966,6 +23006,9 @@ a.button {
   width: 100%;
   height: 100%;
   z-index: 0;
+}
+.overlay.white {
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .field {
