@@ -22400,7 +22400,7 @@ a.button {
 }
 @media screen and (max-width: 767px) {
   .header {
-    height: 120px;
+    height: 80px;
   }
 }
 .header .logo-header {
@@ -22477,8 +22477,15 @@ a.button {
 }
 @media screen and (max-width: 767px) {
   .header .navbar .container .navbar-menu .navbar-action {
-    justify-content: space-between;
-    width: 100%;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+  .header .navbar .container .navbar-menu .navbar-action .button {
+    display: none;
+  }
+  .header .navbar .container .navbar-menu .navbar-action .social a {
+    display: none;
   }
 }
 .header .navbar .container .navbar-menu .navbar-action .social {
@@ -22550,6 +22557,30 @@ a.button {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 767px) {
+  .header .navbar .container .navbar-menu .navbar-collapse.show {
+    flex-direction: column;
+  }
+}
+.header .navbar .container .navbar-menu .navbar-collapse .button {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .header .navbar .container .navbar-menu .navbar-collapse .button {
+    display: block;
+    margin-top: 32px;
+  }
+}
+.header .navbar .container .navbar-menu .navbar-collapse .logo-header {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .header .navbar .container .navbar-menu .navbar-collapse .logo-header {
+    display: block;
+    position: absolute;
+    top: 15px;
+  }
+}
 .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav {
   height: 50px;
   margin: 0 !important;
@@ -22559,6 +22590,11 @@ a.button {
 .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item {
   height: 100%;
   cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item {
+    height: auto;
+  }
 }
 .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item.current_page_item .nav-link, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item.current_page_item a, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item.current_page_item .nav-link, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item.current_page_item a {
   color: #1c1410;
@@ -22577,6 +22613,11 @@ a.button {
   text-transform: uppercase;
   font-family: "Rufina", serif, Verdana, sans-serif;
   color: #1c1410;
+}
+@media screen and (max-width: 767px) {
+  .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item a, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item .nav-link, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item a {
+    height: auto;
+  }
 }
 .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link.show, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link:hover, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item .nav-link:focus, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item a.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item a.show, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item a:hover, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .nav-item a:focus, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item .nav-link.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item .nav-link.show, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item .nav-link:hover, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item .nav-link:focus, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item a.active, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item a.show, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item a:hover, .header .navbar .container .navbar-menu .navbar-collapse .navbar-nav .menu-item a:focus {
   font-weight: 700;
