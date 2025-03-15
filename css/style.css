@@ -23525,6 +23525,7 @@ a.button {
   padding-bottom: 30px;
   text-align: center;
   text-shadow: 0 3px 3px rgba(255, 255, 255, 0.2);
+  text-transform: uppercase;
 }
 @media screen and (max-width: 991px) {
   .section-general-banner .container .banner-text h1, .section-general-banner .container .banner-text .h1 {
@@ -23542,6 +23543,34 @@ a.button {
     font-size: 14px;
     text-shadow: 0px 0px 20px rgb(0, 0, 0);
   }
+}
+
+.section .section-pricing {
+  min-height: 500px;
+  background: #FFFFFF;
+  padding: 56px 0;
+}
+.section .section-pricing h5, .section .section-pricing .h5 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 24px;
+  font-family: "Rufina", Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+}
+.section .section-pricing p {
+  font-size: 16px;
+  color: var(--text-color);
+  margin-bottom: 24px;
+  line-height: 1.4;
+}
+.section .section-pricing .two-columns {
+  display: flex;
+  justify-content: space-between;
+}
+.section .section-pricing .two-columns p {
+  width: 48%;
 }
 
 .section .section-contact {
