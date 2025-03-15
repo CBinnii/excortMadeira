@@ -60,6 +60,10 @@
                 color: var(--text-color);
                 text-align: center;
 
+                .button {
+                    margin-top: 30px;
+                }
+
                 @media screen and (max-width: 991px) {
                     padding: 0 15px;
                 }
@@ -267,7 +271,7 @@
         background: var(--background-color);
         padding-bottom: 56px;
 
-        .excort-box {
+        .escort-box {
             display: flex;
             align-items: center;
             justify-content: center;

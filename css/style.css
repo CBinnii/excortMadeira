@@ -22321,25 +22321,25 @@ a.button {
   background-image: url("../images/icons/prev.svg");
 }
 
-.swiper-button-next-top-excorts, .swiper-button-prev-top-excorts {
+.swiper-button-next-top-escorts, .swiper-button-prev-top-escorts {
   width: 40px;
   height: 40px;
   background-size: 40px;
 }
 @media screen and (min-width: 768px) {
-  .swiper-button-next-top-excorts, .swiper-button-prev-top-excorts {
+  .swiper-button-next-top-escorts, .swiper-button-prev-top-escorts {
     display: none;
   }
 }
-.swiper-button-next-top-excorts:after, .swiper-button-prev-top-excorts:after {
+.swiper-button-next-top-escorts:after, .swiper-button-prev-top-escorts:after {
   font-size: 0px;
 }
 
-.swiper-button-next-top-excorts {
+.swiper-button-next-top-escorts {
   background-image: url("../images/icons/next.svg");
 }
 
-.swiper-button-prev-top-excorts {
+.swiper-button-prev-top-escorts {
   background-image: url("../images/icons/prev.svg");
 }
 
@@ -22802,6 +22802,9 @@ a.button {
   color: var(--text-color);
   text-align: center;
 }
+.section .section-banner .container .banner-text .button {
+  margin-top: 30px;
+}
 @media screen and (max-width: 991px) {
   .section .section-banner .container .banner-text {
     padding: 0 15px;
@@ -22993,7 +22996,7 @@ a.button {
   background: var(--background-color);
   padding-bottom: 56px;
 }
-.section .section-topexcorts .excort-box {
+.section .section-topexcorts .escort-box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23005,16 +23008,16 @@ a.button {
   overflow: hidden;
 }
 @media screen and (min-width: 768px) {
-  .section .section-topexcorts .excort-box:hover .image img {
+  .section .section-topexcorts .escort-box:hover .image img {
     transform: scale(1.1);
   }
 }
 @media screen and (max-width: 767px) {
-  .section .section-topexcorts .excort-box {
+  .section .section-topexcorts .escort-box {
     margin-bottom: 24px;
   }
 }
-.section .section-topexcorts .excort-box .image {
+.section .section-topexcorts .escort-box .image {
   width: 100%;
   height: 650px;
   background-position: center;
@@ -23026,43 +23029,43 @@ a.button {
   overflow: hidden;
 }
 @media screen and (max-width: 767px) {
-  .section .section-topexcorts .excort-box .image {
+  .section .section-topexcorts .escort-box .image {
     height: 450px;
   }
 }
-.section .section-topexcorts .excort-box .image img {
+.section .section-topexcorts .escort-box .image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
   transition: transform 0.3s ease;
 }
-.section .section-topexcorts .excort-box h3, .section .section-topexcorts .excort-box .h3 {
+.section .section-topexcorts .escort-box h3, .section .section-topexcorts .escort-box .h3 {
   font-family: "Rufina", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 32px;
   text-shadow: 0 8px 3px rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
 }
 @media screen and (max-width: 991px) {
-  .section .section-topexcorts .excort-box h3, .section .section-topexcorts .excort-box .h3 {
+  .section .section-topexcorts .escort-box h3, .section .section-topexcorts .escort-box .h3 {
     font-size: 24px;
   }
 }
-.section .section-topexcorts .excort-box p {
+.section .section-topexcorts .escort-box p {
   font-family: "Rufina", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
   line-height: 1.4;
 }
-.section .section-topexcorts .excort-box p.small {
+.section .section-topexcorts .escort-box p.small {
   font-size: 16px;
 }
 @media screen and (max-width: 991px) {
-  .section .section-topexcorts .excort-box p.small {
+  .section .section-topexcorts .escort-box p.small {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 991px) {
-  .section .section-topexcorts .excort-box p {
+  .section .section-topexcorts .escort-box p {
     font-size: 16px;
   }
 }
@@ -23391,12 +23394,12 @@ a.button {
   }
 }
 
-.section .section-excorts {
+.section .section-escorts {
   min-height: 500px;
   background: var(--color-white-pure);
   padding: 56px 0;
 }
-.section .section-excorts .excort-box {
+.section .section-escorts .escort-box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23409,16 +23412,16 @@ a.button {
   margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
-  .section .section-excorts .excort-box:hover .image img {
+  .section .section-escorts .escort-box:hover .image img {
     transform: scale(1.1);
   }
 }
 @media screen and (max-width: 767px) {
-  .section .section-excorts .excort-box {
+  .section .section-escorts .escort-box {
     margin-bottom: 24px;
   }
 }
-.section .section-excorts .excort-box .image {
+.section .section-escorts .escort-box .image {
   width: 100%;
   height: 650px;
   background-position: center;
@@ -23430,43 +23433,43 @@ a.button {
   overflow: hidden;
 }
 @media screen and (max-width: 767px) {
-  .section .section-excorts .excort-box .image {
+  .section .section-escorts .escort-box .image {
     height: 450px;
   }
 }
-.section .section-excorts .excort-box .image img {
+.section .section-escorts .escort-box .image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
   transition: transform 0.3s ease;
 }
-.section .section-excorts .excort-box h3, .section .section-excorts .excort-box .h3 {
+.section .section-escorts .escort-box h3, .section .section-escorts .escort-box .h3 {
   font-family: "Rufina", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 32px;
   text-shadow: 0 8px 3px rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
 }
 @media screen and (max-width: 991px) {
-  .section .section-excorts .excort-box h3, .section .section-excorts .excort-box .h3 {
+  .section .section-escorts .escort-box h3, .section .section-escorts .escort-box .h3 {
     font-size: 24px;
   }
 }
-.section .section-excorts .excort-box p {
+.section .section-escorts .escort-box p {
   font-family: "Rufina", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
   line-height: 1.4;
 }
-.section .section-excorts .excort-box p.small {
+.section .section-escorts .escort-box p.small {
   font-size: 16px;
 }
 @media screen and (max-width: 991px) {
-  .section .section-excorts .excort-box p.small {
+  .section .section-escorts .escort-box p.small {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 991px) {
-  .section .section-excorts .excort-box p {
+  .section .section-escorts .escort-box p {
     font-size: 16px;
   }
 }

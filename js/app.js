@@ -30,10 +30,10 @@ var swiperGeneral = new Swiper(".slider-general", {
     },
 });
 
-var swiperTopExcorts = new Swiper(".slider-top-excorts", {
+var swiperTopExcorts = new Swiper(".slider-top-escorts", {
     navigation: {
-        nextEl: ".swiper-button-next-top-excorts",
-        prevEl: ".swiper-button-prev-top-excorts",
+        nextEl: ".swiper-button-next-top-escorts",
+        prevEl: ".swiper-button-prev-top-escorts",
     },
     breakpoints: {
         640: {
