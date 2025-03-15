@@ -195,7 +195,6 @@
 								justify-content: center;
 								align-items: center;
 								text-align: center;
-								font-weight: 700;
 								font-size: 18px;
 								line-height: 1.4;
 								padding: 8px 16px;
@@ -205,8 +204,8 @@
 								color: #1c1410;
 
 								&.active, &.show, &:hover, &:focus {
-									color: #1c1410;
 									font-weight: 700;
+									border-bottom: 1px solid #1c1410;
 								}
 							}
 						}
