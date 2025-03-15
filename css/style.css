@@ -23116,6 +23116,7 @@ a.button {
   transition: transform 0.3s ease;
   cursor: pointer;
   overflow: hidden;
+  text-decoration: none;
 }
 @media screen and (min-width: 768px) {
   .section .section-blog .post-box:hover .image img {
@@ -23342,6 +23343,7 @@ a.button {
   overflow: hidden;
   position: relative;
   margin-bottom: 30px;
+  text-decoration: none;
 }
 @media screen and (min-width: 768px) {
   .section .section-services .service-box:hover .image img {
@@ -23746,6 +23748,74 @@ a.button {
   object-fit: cover;
 }
 
+.single {
+  background-color: #FFFFFF;
+}
+.single .section {
+  color: #012319;
+}
+.single .section h1, .single .section .h1, .single .section h2, .single .section .h2, .single .section h3, .single .section .h3, .single .section h4, .single .section .h4, .single .section h5, .single .section .h5, .single .section h6, .single .section .h6 {
+  font-family: "Rufina", Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 16px;
+}
+.single .section h1 strong, .single .section .h1 strong, .single .section h2 strong, .single .section .h2 strong, .single .section h3 strong, .single .section .h3 strong, .single .section h4 strong, .single .section .h4 strong, .single .section h5 strong, .single .section .h5 strong, .single .section h6 strong, .single .section .h6 strong {
+  font-weight: 700;
+}
+.single .section h1, .single .section .h1 {
+  font-size: 50px;
+}
+.single .section h2, .single .section .h2 {
+  font-size: 44px;
+}
+.single .section h3, .single .section .h3 {
+  font-size: 38px;
+}
+.single .section h4, .single .section .h4 {
+  font-size: 32px;
+}
+.single .section h5, .single .section .h5 {
+  font-size: 26px;
+}
+.single .section h6, .single .section .h6 {
+  font-size: 20px;
+}
+.single .section p {
+  font-family: "Rufina", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+.single .section p strong {
+  font-weight: 700;
+}
+.single .section-single {
+  min-height: 500px;
+  background: #FFFFFF;
+  padding: 56px 0;
+}
+.single .section-single h5, .single .section-single .h5 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 24px;
+  font-family: "Rufina", Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+}
+.single .section-single p {
+  font-size: 16px;
+  color: var(--text-color);
+  margin-bottom: 24px;
+  line-height: 1.4;
+}
+.single .section-single .two-columns {
+  display: flex;
+  justify-content: space-between;
+}
+.single .section-single .two-columns p {
+  width: 48%;
+}
+
 body {
   font-family: "Rufina", serif, Verdana, sans-serif;
 }
@@ -23760,6 +23830,85 @@ body {
   font-family: "Rufina", serif, Verdana, sans-serif;
   font-weight: 700;
   font-style: normal;
+}
+
+.follow-floted {
+  position: fixed;
+  top: 33.333%;
+  right: -100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 12;
+}
+.follow-floted label {
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  text-shadow: 0 1px 1px rgba(189, 134, 150, 0.9);
+  -webkit-text-shadow: 0 1px 1px rgba(189, 134, 150, 0.9);
+  -moz-text-shadow: 0 1px 1px rgba(189, 134, 150, 0.9);
+  -ms-text-shadow: 0 1px 1px rgba(189, 134, 150, 0.9);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.follow-floted ul {
+  padding-top: 100px;
+  position: relative;
+  margin-top: 45px;
+  list-style: none;
+  padding-left: 0;
+}
+.follow-floted ul::before {
+  content: "";
+  background-color: #313131;
+  width: 1px;
+  height: 25px;
+  position: absolute;
+  top: 77px;
+  left: 12px;
+}
+.follow-floted ul li {
+  text-align: center;
+  margin-top: 14px;
+}
+.follow-floted ul li a {
+  font-size: 18px;
+  color: var(--text-color);
+  display: block;
+}
+.follow-floted ul li a:hover {
+  color: var(--link-hover-color);
+}
+
+.icon-telegram {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .icon-telegram {
+    display: block;
+    position: fixed;
+    bottom: 24px;
+    z-index: 1000;
+    left: 44%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--background-color);
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon-telegram a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .title {

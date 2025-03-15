@@ -20,6 +20,7 @@
 @import "./_pricing.scss";
 @import "./_contact.scss";
 @import "./_profile.scss";
+@import "./_single.scss";
 
 body {
     font-family: "Rufina", serif, Verdana, sans-serif;
@@ -35,6 +36,93 @@ body {
     font-family: "Rufina", serif, Verdana, sans-serif;
     font-weight: 700;
     font-style: normal;
+}
+
+.follow-floted {
+    position: fixed;
+    top: 33.333%;
+    right: -100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 12;
+
+    label {
+        font-size: 14px;
+        letter-spacing: 1.4px;
+        text-shadow: 0 1px 1px rgb(189 134 150 / 90%);
+        -webkit-text-shadow: 0 1px 1px rgba(189, 134, 150, .9);
+        -moz-text-shadow: 0 1px 1px rgba(189, 134, 150, .9);
+        -ms-text-shadow: 0 1px 1px rgba(189, 134, 150, .9);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+    ul {
+        padding-top: 100px;
+        position: relative;
+        margin-top: 45px;
+        list-style: none;
+        padding-left: 0;
+
+        &::before {
+            content: "";
+            background-color: #313131;
+            width: 1px;
+            height: 25px;
+            position: absolute;
+            top: 77px;
+            left: 12px;
+        }
+        
+        li {
+            text-align: center;
+            margin-top: 14px;
+
+            a {
+                font-size: 18px;
+                color: var(--text-color);
+                display: block;
+
+                &:hover {
+                    color: var(--link-hover-color);
+                }
+            }
+        }
+    }
+}
+
+.icon-telegram {
+    display: none;
+    
+    @media screen and (max-width: 767px) {
+        display: block;
+        position: fixed;
+        bottom: 24px;
+        z-index: 1000;
+        left: 44%;
+
+        width: 50px;
+        height: 50px;
+        background-color: var(--background-color);
+        border-radius: 50%;
+        box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
 
 .title {
