@@ -23834,7 +23834,7 @@ body {
 
 .follow-floted {
   position: fixed;
-  top: 33.333%;
+  top: 230px;
   right: -100px;
   display: flex;
   flex-wrap: wrap;
@@ -23846,10 +23846,10 @@ body {
 .follow-floted label {
   font-size: 14px;
   letter-spacing: 1.4px;
-  text-shadow: 0 1px 1px rgba(189, 134, 150, 0.9);
-  -webkit-text-shadow: 0 1px 1px rgba(189, 134, 150, 0.9);
-  -moz-text-shadow: 0 1px 1px rgba(189, 134, 150, 0.9);
-  -ms-text-shadow: 0 1px 1px rgba(189, 134, 150, 0.9);
+  text-shadow: 0 1px 1px rgba(249, 244, 222, 0.4);
+  -webkit-text-shadow: 0 1px 1px rgba(249, 244, 222, 0.4);
+  -moz-text-shadow: 0 1px 1px rgba(249, 244, 222, 0.4);
+  -ms-text-shadow: 0 1px 1px rgba(249, 244, 222, 0.4);
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
