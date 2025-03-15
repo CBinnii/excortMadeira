@@ -1,5 +1,5 @@
 .section {
-    .section-escorts {
+    .section-profile {
         min-height: 500px;
         background: var(--color-white-pure);
         padding: 56px 0;
@@ -14,8 +14,8 @@
             transition: transform 0.3s ease;
             cursor: pointer;
             overflow: hidden;
-            margin-bottom: 30px;
             text-decoration: none;
+            height: 100%;
 
             @media screen and (min-width: 768px) {
                 &:hover {
@@ -33,13 +33,12 @@
 
             .image {
                 width: 100%;
-                height: 650px;
+                height: 100%;
                 background-position: center;
                 background-size: cover;
                 position: relative;
                 border-radius: 12px;
                 box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.04);
-                margin-bottom: 24px;
                 overflow: hidden;
 
                 @media screen and (max-width: 767px) {
@@ -84,5 +83,47 @@
                 }
             }
         }
+    }
+
+    .swiper {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .swiper-slide {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .profile-slider {
+        height: 650px;
+        width: 100%;
+    }
+
+    .profile-thumb {
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+    }
+
+    .profile-thumb .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    .profile-thumb .swiper-slide-thumb-active {
+        opacity: 1;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }

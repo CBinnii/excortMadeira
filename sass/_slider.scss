@@ -44,6 +44,24 @@
     background-image: url('../images/icons/prev.svg');
 }
 
+.swiper-button-next-profile, .swiper-button-prev-profile {
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+
+    &:after {
+        font-size: 0px;
+    }
+}
+
+.swiper-button-next-profile {
+    background-image: url('../images/icons/next.svg');
+}
+
+.swiper-button-prev-profile {
+    background-image: url('../images/icons/prev.svg');
+}
+
 .swiper-button-next-blog, .swiper-button-prev-blog {
     width: 40px;
     height: 40px;

@@ -19,6 +19,7 @@
 @import "./_banner.scss";
 @import "./_pricing.scss";
 @import "./_contact.scss";
+@import "./_profile.scss";
 
 body {
     font-family: "Rufina", serif, Verdana, sans-serif;
@@ -57,12 +58,19 @@ body {
 .ellipsis {
     display: -webkit-box;
     -webkit-line-clamp: 1;
+    line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
 
     &.two-lines {
       -webkit-line-clamp: 2;  /* Limita a 2 linhas */
+      line-clamp: 2;
+    }
+
+    &.three-lines {
+      -webkit-line-clamp: 3;  /* Limita a 2 linhas */
+      line-clamp: 3;
     }
 }
 

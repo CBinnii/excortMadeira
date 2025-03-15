@@ -47,6 +47,13 @@ var swiperTopExcorts = new Swiper(".slider-top-escorts", {
     },
 });
 
+var swiperTopExcorts = new Swiper(".slider-profile", {
+    navigation: {
+        nextEl: ".swiper-button-next-profile",
+        prevEl: ".swiper-button-prev-profile",
+    },
+});
+
 var swiperBlog = new Swiper(".slider-blog", {
     navigation: {
         nextEl: ".swiper-button-next-blog",
@@ -84,5 +91,24 @@ var swiperWhy = new Swiper(".slider-why", {
             slidesPerView: 4,
             spaceBetween: 30,
         },
+    },
+});
+
+var swiperProfileThumb = new Swiper(".profile-thumb", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+var swiperProfileSlider = new Swiper(".profile-slider", {
+    loop: true,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next-profile",
+        prevEl: ".swiper-button-prev-profile",
+    },
+    thumbs: {
+        swiper: swiperProfileThumb,
     },
 });

@@ -22343,6 +22343,23 @@ a.button {
   background-image: url("../images/icons/prev.svg");
 }
 
+.swiper-button-next-profile, .swiper-button-prev-profile {
+  width: 40px;
+  height: 40px;
+  background-size: 40px;
+}
+.swiper-button-next-profile:after, .swiper-button-prev-profile:after {
+  font-size: 0px;
+}
+
+.swiper-button-next-profile {
+  background-image: url("../images/icons/next.svg");
+}
+
+.swiper-button-prev-profile {
+  background-image: url("../images/icons/prev.svg");
+}
+
 .swiper-button-next-blog, .swiper-button-prev-blog {
   width: 40px;
   height: 40px;
@@ -23017,6 +23034,7 @@ a.button {
   transition: transform 0.3s ease;
   cursor: pointer;
   overflow: hidden;
+  text-decoration: none;
 }
 @media screen and (min-width: 768px) {
   .section .section-topexcorts .escort-box:hover .image img {
@@ -23421,6 +23439,7 @@ a.button {
   cursor: pointer;
   overflow: hidden;
   margin-bottom: 30px;
+  text-decoration: none;
 }
 @media screen and (min-width: 768px) {
   .section .section-escorts .escort-box:hover .image img {
@@ -23622,6 +23641,121 @@ a.button {
   color: var(--link-hover-color);
 }
 
+.section .section-profile {
+  min-height: 500px;
+  background: var(--color-white-pure);
+  padding: 56px 0;
+}
+.section .section-profile .escort-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #012319;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  text-decoration: none;
+  height: 100%;
+}
+@media screen and (min-width: 768px) {
+  .section .section-profile .escort-box:hover .image img {
+    transform: scale(1.1);
+  }
+}
+@media screen and (max-width: 767px) {
+  .section .section-profile .escort-box {
+    margin-bottom: 24px;
+  }
+}
+.section .section-profile .escort-box .image {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  .section .section-profile .escort-box .image {
+    height: 450px;
+  }
+}
+.section .section-profile .escort-box .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+.section .section-profile .escort-box h3, .section .section-profile .escort-box .h3 {
+  font-family: "Rufina", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 32px;
+  text-shadow: 0 8px 3px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+}
+@media screen and (max-width: 991px) {
+  .section .section-profile .escort-box h3, .section .section-profile .escort-box .h3 {
+    font-size: 24px;
+  }
+}
+.section .section-profile .escort-box p {
+  font-family: "Rufina", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+}
+.section .section-profile .escort-box p.small {
+  font-size: 16px;
+}
+@media screen and (max-width: 991px) {
+  .section .section-profile .escort-box p.small {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .section .section-profile .escort-box p {
+    font-size: 16px;
+  }
+}
+.section .swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section .swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+.section .profile-slider {
+  height: 650px;
+  width: 100%;
+}
+.section .profile-thumb {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+.section .profile-thumb .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.section .profile-thumb .swiper-slide-thumb-active {
+  opacity: 1;
+}
+.section .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 body {
   font-family: "Rufina", serif, Verdana, sans-serif;
 }
@@ -23659,12 +23793,18 @@ body {
 .ellipsis {
   display: -webkit-box;
   -webkit-line-clamp: 1;
+  line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .ellipsis.two-lines {
   -webkit-line-clamp: 2; /* Limita a 2 linhas */
+  line-clamp: 2;
+}
+.ellipsis.three-lines {
+  -webkit-line-clamp: 3; /* Limita a 2 linhas */
+  line-clamp: 3;
 }
 
 @media screen and (max-width: 767px) {
