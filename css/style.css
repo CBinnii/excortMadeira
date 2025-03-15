@@ -22640,10 +22640,16 @@ a.button {
   color: #1c1410;
   margin-bottom: 24px;
   text-align: center;
+  text-transform: uppercase;
 }
 .footer .container .footer-menu, .footer .container .footer-terms, .footer .container .footer-contact {
   font-family: "Rufina", Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .footer .container .footer-menu, .footer .container .footer-terms, .footer .container .footer-contact {
+    margin-bottom: 24px;
+  }
 }
 .footer .container .footer-menu h4, .footer .container .footer-menu .h4, .footer .container .footer-terms h4, .footer .container .footer-terms .h4, .footer .container .footer-contact h4, .footer .container .footer-contact .h4 {
   font: normal normal normal 18px "Rufina";
@@ -22654,6 +22660,11 @@ a.button {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+@media screen and (max-width: 767px) {
+  .footer .container .footer-menu {
+    margin-bottom: 24px;
+  }
 }
 .footer .container .footer-menu li a {
   display: block;
@@ -23559,6 +23570,28 @@ a.button {
     top: -50px;
   }
 }
+.section .section-contact .contact h3, .section .section-contact .contact .h3 {
+  font-size: 24px;
+  color: var(--text-color);
+  margin-bottom: 24px;
+  text-align: center;
+}
+.section .section-contact .contact p {
+  font-size: 16px;
+  color: var(--text-color);
+  margin-bottom: 16px;
+  text-align: center;
+}
+.section .section-contact .contact a {
+  font-size: 16px;
+  color: var(--text-color);
+  text-align: center;
+  line-height: 1.4;
+  transition: 0.3s;
+}
+.section .section-contact .contact a:hover {
+  color: var(--link-hover-color);
+}
 
 body {
   font-family: "Rufina", serif, Verdana, sans-serif;
@@ -23610,6 +23643,15 @@ body {
     margin-bottom: 24px !important;
   }
 }
+.mt-30 {
+  margin-top: 30px !important;
+}
+@media screen and (max-width: 767px) {
+  .mt-30 {
+    margin-top: 24px !important;
+  }
+}
+
 .mb-30 {
   margin-bottom: 30px !important;
 }
