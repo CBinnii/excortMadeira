@@ -22754,7 +22754,6 @@ a.button {
 }
 @media screen and (max-width: 991px) {
   .section .section-banner .container {
-    background: rgba(249, 244, 222, 0.502);
     padding: 0;
   }
 }
@@ -23351,6 +23350,86 @@ a.button {
   }
 }
 
+.section .section-excorts {
+  min-height: 500px;
+  background: var(--color-white-pure);
+  padding: 56px 0;
+}
+.section .section-excorts .excort-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #012319;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .section .section-excorts .excort-box:hover .image img {
+    transform: scale(1.1);
+  }
+}
+@media screen and (max-width: 767px) {
+  .section .section-excorts .excort-box {
+    margin-bottom: 24px;
+  }
+}
+.section .section-excorts .excort-box .image {
+  width: 100%;
+  height: 650px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.04);
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  .section .section-excorts .excort-box .image {
+    height: 450px;
+  }
+}
+.section .section-excorts .excort-box .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+.section .section-excorts .excort-box h3, .section .section-excorts .excort-box .h3 {
+  font-family: "Rufina", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 32px;
+  text-shadow: 0 8px 3px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+}
+@media screen and (max-width: 991px) {
+  .section .section-excorts .excort-box h3, .section .section-excorts .excort-box .h3 {
+    font-size: 24px;
+  }
+}
+.section .section-excorts .excort-box p {
+  font-family: "Rufina", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+}
+.section .section-excorts .excort-box p.small {
+  font-size: 16px;
+}
+@media screen and (max-width: 991px) {
+  .section .section-excorts .excort-box p.small {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .section .section-excorts .excort-box p {
+    font-size: 16px;
+  }
+}
+
 .section-general-banner {
   position: relative;
 }
@@ -23372,12 +23451,6 @@ a.button {
   align-items: center;
   justify-content: center;
   position: relative;
-}
-@media screen and (max-width: 991px) {
-  .section-general-banner .container {
-    background: rgba(249, 244, 222, 0.502);
-    padding: 0;
-  }
 }
 .section-general-banner .container .banner-text {
   color: var(--text-color);
