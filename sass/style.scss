@@ -8,6 +8,7 @@
 @import "./vendor/swiper/_swiper.scss";
 @import "./vendor/reset";
 
+@import "./_pills.scss";
 @import "./_button.scss";
 @import "./_slider.scss";
 @import "./_header.scss";
@@ -21,6 +22,7 @@
 @import "./_contact.scss";
 @import "./_profile.scss";
 @import "./_single.scss";
+@import "./_text.scss";
 
 body {
     font-family: "Rufina", serif, Verdana, sans-serif;
@@ -143,6 +145,14 @@ body {
     }
 }
 
+.gap-16 {
+    gap: 16px;
+}
+
+.gap-24 {
+    gap: 24px;
+}
+
 .ellipsis {
     display: -webkit-box;
     -webkit-line-clamp: 1;
@@ -182,4 +192,33 @@ body {
     @media screen and (max-width: 767px) {
         margin-bottom: 24px !important;
     }
+}
+
+.mb-24 {
+    margin-bottom: 24px !important;
+}
+
+.mb-16 {
+    margin-bottom: 16px !important;
+}
+
+.mb-8 {
+    margin-bottom: 8px !important;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #d2261a !important;
+}
+
+.bg-white {
+    background-color: var(--color-white-pure) !important;
+}
+
+.bg-light {
+    background-color: var(--background-color) !important;
+}
+
+.form-check-input:checked {
+    background-color: #d2261a !important;
+    border-color: #d2261a !important;
 }

@@ -60,6 +60,7 @@ a {
     background: #d2261a;
     display: flex;
     align-items: center;
+    color: #f9f4de;
 
     i {
         font-size: 14px;
@@ -80,6 +81,10 @@ a {
 
     &.white {
         color: #f9f4de;
+    }
+
+    &.border-white {
+        border: solid 1px #f9f4de;
     }
 
     &.dark {
