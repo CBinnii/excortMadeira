@@ -24388,6 +24388,9 @@ body {
   .mob-mb-24 {
     margin-bottom: 24px !important;
   }
+  .mob-mt-24 {
+    margin-top: 24px !important;
+  }
 }
 .mt-30 {
   margin-top: 30px !important;
@@ -24434,6 +24437,24 @@ body {
 .form-check-input:checked {
   background-color: #d2261a !important;
   border-color: #d2261a !important;
+}
+
+.desktop {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .desktop {
+    display: none;
+  }
+}
+
+.mobile {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .mobile {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
