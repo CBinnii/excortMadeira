@@ -15,6 +15,8 @@
 	.logo-header {
 		display: flex;
 		justify-content: flex-end;
+		position: relative;
+		z-index: 1000;
 
 		@media screen and (max-width: 767px) {
 			justify-content: center;
@@ -29,6 +31,7 @@
 		@media screen and (max-width: 767px) {
 			justify-content: space-between;
 			width: 100%;
+			z-index: 1000;
 		}
 	}
 
@@ -82,6 +85,93 @@
 					align-items: center;
 					gap: 16px;
 					justify-content: flex-end;
+
+					.button {
+						position: relative;
+						z-index: 1000;
+					}
+					
+					.header-site-search {
+						height: 46px;
+						position: relative;
+						width: 50px;
+						z-index: 1000;
+
+						@media screen and (max-width: 767px) {
+							display: none;
+						}
+
+						&.active {
+							.header-site-search-icon {
+								pointer-events: none;
+							}
+
+							form {
+								opacity: 1;
+								visibility: visible;
+							}
+
+							input {
+								width: 225px;
+							}
+						}
+
+						.header-site-search-icon {
+							height: 46px;
+							position: relative;
+							z-index: 3;
+							display: flex;
+
+							&:before {
+								color: #f6cd7e;
+								content: url('./../images/icons/search.svg');
+								font-size: 32px;
+								left: 50%;
+								position: absolute;
+								top: 50%;
+								transform: translate(-50%, -50%);
+							}
+						}
+
+						form {
+							-webkit-backface-visibility: visible;
+							backface-visibility: visible;
+							background-color: #fff;
+							border: 1px solid #e7e7e7;
+							opacity: 0;
+							padding-right: 50px;
+							position: absolute;
+							right: 0;
+							top: 50%;
+							transform: translateY(-50%);
+							transition: all .35s ease-in-out;
+							visibility: hidden;
+							z-index: 2;
+						}
+
+						input {
+							height: 46px;
+							padding: 0 10px;
+							transition: all .35s ease-in-out;
+							width: 0;
+							border: none;
+						}
+
+						button {
+							background: transparent none;
+							border: 0;
+							bottom: 0;
+							cursor: pointer;
+							display: block;
+							font-size: 0;
+							height: 100%;
+							position: absolute;
+							right: 10px;
+							top: 0;
+							width: 44px;
+							z-index: 10;
+						}
+					}
 
 					@media screen and (max-width: 767px) {
 						position: absolute;

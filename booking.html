@@ -74,29 +74,14 @@
                                     BOOK NOW
                                 </a>
                                 <span class="social">
-                                    <a href="#">
-                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_403_21)">
-                                                <path
-                                                    d="M12.5 0C9.18555 0 6.00391 1.31777 3.66211 3.66113C1.31791 6.00543 0.000670798 9.18473 0 12.5C0 15.8139 1.31836 18.9955 3.66211 21.3389C6.00391 23.6822 9.18555 25 12.5 25C15.8145 25 18.9961 23.6822 21.3379 21.3389C23.6816 18.9955 25 15.8139 25 12.5C25 9.18613 23.6816 6.00449 21.3379 3.66113C18.9961 1.31777 15.8145 0 12.5 0Z"
-                                                    fill="url(#paint0_linear_403_21)" />
-                                                <path
-                                                    d="M5.65819 12.3679C9.30272 10.7804 11.7324 9.73381 12.9473 9.22808C16.4199 7.78413 17.1406 7.53335 17.6113 7.52485C17.7148 7.52319 17.9453 7.54878 18.0957 7.67036C18.2207 7.7729 18.2558 7.91157 18.2734 8.00894C18.289 8.1062 18.3105 8.32788 18.293 8.50093C18.1055 10.4775 17.291 15.274 16.8769 17.4878C16.7031 18.4246 16.3574 18.7386 16.0234 18.7693C15.2969 18.8361 14.7461 18.2896 14.043 17.8289C12.9433 17.1076 12.3223 16.6587 11.2539 15.955C10.0195 15.1417 10.8203 14.6947 11.5234 13.9642C11.707 13.773 14.9062 10.8638 14.9668 10.6C14.9746 10.5669 14.9824 10.4439 14.9082 10.3791C14.8359 10.314 14.7285 10.3363 14.6504 10.3539C14.5391 10.3789 12.7832 11.5406 9.37694 13.8388C8.87889 14.1814 8.42772 14.3484 8.02147 14.3396C7.57616 14.33 6.71678 14.0873 6.07811 13.8798C5.29686 13.6253 4.67382 13.4908 4.7285 13.0585C4.75585 12.8335 5.06639 12.6033 5.65819 12.3679Z"
-                                                    fill="white" />
-                                            </g>
-                                            <defs>
-                                                <linearGradient id="paint0_linear_403_21" x1="1250" y1="0" x2="1250"
-                                                    y2="2500" gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#2AABEE" />
-                                                    <stop offset="1" stop-color="#229ED9" />
-                                                </linearGradient>
-                                                <clipPath id="clip0_403_21">
-                                                    <rect width="25" height="25" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </a>
+                                    <div class="header-site-search">
+                                        <span class="header-site-search-icon"></span>
+                                        <form method="GET" action="#" role="search">
+                                            <input class="header-site-search-input" type="text" name="keyword" id="keyword" placeholder="Search...">
+                                            <button type="submit">Search</button>
+                                        </form>
+                                    </div>
+                                    
                                     <button class="navbar-toggler">
                                         <div class="menu-button" id="menu-button" onclick="menuMobile()">
                                             <div class="bar"></div>
@@ -135,16 +120,43 @@
                 <div class="swiper-button-prev swiper-button-prev-slider-general"></div>
             </div>
 
-            <div class="section-booking">
+            <div class="section-about">
+                <div class="title">
+                    <div class="container">
+                        <h3>Welcome to Escort Madeira!</h3>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, ipsam. Quod quibusdam
+                                harum tempore praesentium architecto enim voluptas. Doloremque porro natus minus,
+                                dolores atque odit accusantium distinctio quidem dolorem animi. Lorem ipsum dolor, sit
+                                amet consectetur adipisicing elit. Repellendus eum quaerat, corrupti sed esse,
+                                voluptatem magnam quidem hic accusamus architecto illum laborum eius impedit ratione
+                                dolore modi provident amet pariatur.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, ipsam. Quod quibusdam
+                                harum tempore praesentium architecto enim voluptas. Doloremque porro natus minus,
+                                dolores atque odit accusantium distinctio quidem dolorem animi. Lorem ipsum dolor, sit
+                                amet consectetur adipisicing elit. Repellendus eum quaerat, corrupti sed esse,
+                                voluptatem magnam quidem hic accusamus architecto illum laborum eius impedit ratione
+                                dolore modi provident amet pariatur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-booking border-bottom">
                 <div class="container">
                     <div class="booking">
                         <div class="row m-0">
-                            <div class="col-md-6 p-0">
+                            <div class="col-md-5 p-0">
                                 <div class="image-booking">
                                     <img src="./images/bg-3.png" alt="">
                                 </div>
                             </div>
-                            <div class="col-md-6 p-0">
+                            <div class="col-md-7 p-0">
                                 <div class="form-booking">
                                     <form action="">
                                         <div class="mb-24">
@@ -161,23 +173,85 @@
                                         <span class="txt-paragraph lg uppercase block mb-16 white">Your details</span>
                                         <div class="row mb-3">
                                             <div class="col-6">
-                                                <label for="exampleFormControlInput1" class="form-label">Name</label>
+                                                <label for="exampleFormControlInput3" class="form-label mb-3">Have you booked with us before? </label>
+                                                <div class="row mb-3">
+                                                    <div class="col-4">
+                                                        <input class="form-check-input m-0" type="radio" name="bookedBefore" id="bookedBefore1">
+                                                        <label class="form-check-label m-0" for="bookedBefore1">
+                                                            Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <input class="form-check-input m-0" type="radio" name="bookedBefore" id="bookedBefore1">
+                                                        <label class="form-check-label m-0" for="bookedBefore1">
+                                                            No
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <label for="exampleFormControlInput3" class="form-label mb-3">You are: </label>
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <input class="form-check-input m-0" type="radio" name="youAre" id="youAre1">
+                                                        <label class="form-check-label m-0" for="youAre1">
+                                                            Man
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <input class="form-check-input m-0" type="radio" name="youAre" id="youAre1">
+                                                        <label class="form-check-label m-0" for="youAre1">
+                                                            Woman
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <input class="form-check-input m-0" type="radio" name="youAre" id="youAre1">
+                                                        <label class="form-check-label m-0" for="youAre1">
+                                                            Couple
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-6">
+                                                <label for="exampleFormControlInput1" class="form-label">First name</label>
                                                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your name">
                                             </div>
                                             <div class="col-6">
-                                                <label for="exampleFormControlInput2" class="form-label">E-mail</label>
-                                                <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+                                                <label for="exampleFormControlInput1" class="form-label">Last name</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your name">
                                             </div>
                                         </div>
                                         <div class="row mb-24">
                                             <div class="col-6">
+                                                <label for="exampleFormControlInput2" class="form-label">E-mail</label>
+                                                <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+                                            </div>
+                                            <div class="col-6">
                                                 <label for="exampleFormControlInput4" class="form-label">Phone</label>
                                                 <input type="text" class="form-control" id="exampleFormControlInput4" placeholder="Your phone">
                                             </div>
-                                            <div class="col-6">
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <div class="col-4">
                                                 <label for="exampleFormControlInput5" class="form-label">Telegram</label>
                                                 <input type="text" class="form-control" id="exampleFormControlInput5" placeholder="Telegram username">
                                             </div>
+                                            <div class="col-4">
+                                                <label for="exampleFormControlInput6" class="form-label">Nationality</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput6" placeholder="Your nacionality"> 
+                                            </div>
+                                            <div class="col-4">
+                                                <label for="exampleFormControlInput5" class="form-label">Birth year</label>
+                                                <input type="text" class="form-control" id="exampleFormControlInput5" placeholder="Birth year">
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlTextarea1" class="form-label">Introduce yourself</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Introduce yourself"></textarea>
                                         </div>
                                         
                                         <span class="txt-paragraph lg uppercase block mb-16 white">Booking details</span>
@@ -210,15 +284,21 @@
                                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Do you have any requirement?"></textarea>
                                         </div>
                                         <div class="row mb-3">
-                                            <div class="col-6">
+                                            <div class="col-4">
                                                 <input class="form-check-input m-0" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                                 <label class="form-check-label m-0" for="flexRadioDefault1">
                                                     Contact me by whatsapp
                                                 </label>
                                             </div>
-                                            <div class="col-6">
+                                            <div class="col-4">
                                                 <input class="form-check-input m-0" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                                                 <label class="form-check-label m-0" for="flexRadioDefault2">
+                                                    Contact me by telegram
+                                                </label>
+                                            </div>
+                                            <div class="col-4">
+                                                <input class="form-check-input m-0" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                                                <label class="form-check-label m-0" for="flexRadioDefault3">
                                                     Contact me by e-mail
                                                 </label>
                                             </div>
@@ -231,6 +311,66 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-blog bg-white">
+                <div class="title">
+                    <div class="container">
+                        <h3>Blog</h3>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="swiper slider-blog">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="post.html" class="post-box">
+                                    <div class="image">
+                                        <img src="./images/bg-3.png" alt="Escort 1">
+                                    </div>
+                                    <h3>Experience Madeira's Finest</h3>
+                                    <p class="ellipsis two-lines">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. Delectus rem debitis quis temporibus accusamus excepturi sapiente, dolorem
+                                        neque deleniti reiciendis minima, ad blanditiis ratione praesentium modi! Neque
+                                        natus a deserunt.</p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="post.html" class="post-box">
+                                    <div class="image">
+                                        <img src="./images/bg-4.png" alt="Escort 2">
+                                    </div>
+                                    <h3>Discret meeting | Madeira</h3>
+                                    <p class="ellipsis two-lines">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                        elit. Maxime esse ut quis tempore, omnis nesciunt tenetur totam, a voluptas
+                                        cumque amet rerum quod incidunt? Ab minus facilis numquam perferendis officia.
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="post.html" class="post-box">
+                                    <div class="image">
+                                        <img src="./images/bg-5.png" alt="Escort 3">
+                                    </div>
+                                    <h3>Booking and pay with bitcoin!</h3>
+                                    <p class="ellipsis two-lines">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. Voluptatibus nam quis id harum ut recusandae architecto eius ipsam earum
+                                        sunt aliquam libero quasi pariatur, consectetur culpa laborum magni sit veniam?
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-next swiper-button-next-blog"></div>
+                        <div class="swiper-button-prev swiper-button-prev-blog"></div>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <a href="blog.html" class="button bold white">
+                            Read more
+                        </a>
                     </div>
                 </div>
             </div>

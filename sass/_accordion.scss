@@ -19,14 +19,20 @@
                 font-size: 20px;
 
                 &:after {
-                    background-image: url("../images/icons/expand-more.svg");
+                    background-image: url("../images/icons/plus.svg");
+                    transform: rotate(0deg);
+                    background-size: 10px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    content: "";
                 }
 
                 &:not(.collapsed) {
                     color: var(--text-color);
                     
                     &:after {
-                        background-image: url("../images/icons/expand-more.svg");
+                        background-image: url("../images/icons/minus.svg");
+                        transform: rotate(0deg);
                     }
                 }
             }

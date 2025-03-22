@@ -31,37 +31,44 @@
                 font-size: 24px;
                 color: var(--text-color);
                 margin-bottom: 24px;
-                text-align: center;
             }
 
             p {
                 font-size: 16px;
                 color: var(--text-color);
                 margin-bottom: 16px;
-                text-align: center;
             }
 
             a {
                 font-size: 16px;
                 color: var(--text-color);
-                text-align: center;
                 line-height: 1.4;
                 transition: 0.3s;
+                text-decoration: none;
 
                 &:hover {
                     color: var(--link-hover-color);
+                }
+            }
+
+            ul {
+                li {
+                    display: flex;
+                    justify-content: center;
+                    gap: 16px;
                 }
             }
         }
     }
 
     .booking {
-        margin-top: -150px;
-        z-index: 1000;
-        position: relative;
-        margin-bottom: 56px;
-        border-radius: 12px;
-        overflow: hidden;
+        padding: 56px 0;
+    }
+
+    .text-left {
+        p {
+            text-align: left;
+        }
     }
 
     .section-booking {

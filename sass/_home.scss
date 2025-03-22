@@ -442,6 +442,7 @@
     .page-blog {
         padding-top: 56px;
         padding-bottom: 26px;
+        background-color: #FFFFFF;
     }
 
     .section-faq {
@@ -453,7 +454,7 @@
             h3 {
                 font-family: 'Rufina', Verdana, Geneva, Tahoma, sans-serif;
                 font-size: 56px;
-                text-shadow: 0 8px 3px rgba(0, 0, 0, .2);
+                // text-shadow: 0 8px 3px rgba(0, 0, 0, .2);
                 text-transform: uppercase;
                 margin-bottom: 0;
                 color: var(--text-color);

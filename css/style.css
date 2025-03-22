@@ -22446,6 +22446,8 @@ a.button {
 .header .logo-header {
   display: flex;
   justify-content: flex-end;
+  position: relative;
+  z-index: 1000;
 }
 @media screen and (max-width: 767px) {
   .header .logo-header {
@@ -22461,6 +22463,7 @@ a.button {
   .header .menu-header {
     justify-content: space-between;
     width: 100%;
+    z-index: 1000;
   }
 }
 .header .navbar {
@@ -22514,6 +22517,82 @@ a.button {
   align-items: center;
   gap: 16px;
   justify-content: flex-end;
+}
+.header .navbar .container .navbar-menu .navbar-action .button {
+  position: relative;
+  z-index: 1000;
+}
+.header .navbar .container .navbar-menu .navbar-action .header-site-search {
+  height: 46px;
+  position: relative;
+  width: 50px;
+  z-index: 1000;
+}
+@media screen and (max-width: 767px) {
+  .header .navbar .container .navbar-menu .navbar-action .header-site-search {
+    display: none;
+  }
+}
+.header .navbar .container .navbar-menu .navbar-action .header-site-search.active .header-site-search-icon {
+  pointer-events: none;
+}
+.header .navbar .container .navbar-menu .navbar-action .header-site-search.active form {
+  opacity: 1;
+  visibility: visible;
+}
+.header .navbar .container .navbar-menu .navbar-action .header-site-search.active input {
+  width: 225px;
+}
+.header .navbar .container .navbar-menu .navbar-action .header-site-search .header-site-search-icon {
+  height: 46px;
+  position: relative;
+  z-index: 3;
+  display: flex;
+}
+.header .navbar .container .navbar-menu .navbar-action .header-site-search .header-site-search-icon:before {
+  color: #f6cd7e;
+  content: url("./../images/icons/search.svg");
+  font-size: 32px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.header .navbar .container .navbar-menu .navbar-action .header-site-search form {
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  background-color: #fff;
+  border: 1px solid #e7e7e7;
+  opacity: 0;
+  padding-right: 50px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.35s ease-in-out;
+  visibility: hidden;
+  z-index: 2;
+}
+.header .navbar .container .navbar-menu .navbar-action .header-site-search input {
+  height: 46px;
+  padding: 0 10px;
+  transition: all 0.35s ease-in-out;
+  width: 0;
+  border: none;
+}
+.header .navbar .container .navbar-menu .navbar-action .header-site-search button {
+  background: transparent none;
+  border: 0;
+  bottom: 0;
+  cursor: pointer;
+  display: block;
+  font-size: 0;
+  height: 100%;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  width: 44px;
+  z-index: 10;
 }
 @media screen and (max-width: 767px) {
   .header .navbar .container .navbar-menu .navbar-action {
@@ -22775,13 +22854,19 @@ a.button {
   font-size: 20px;
 }
 .accordion .accordion-item .accordion-header .accordion-button:after {
-  background-image: url("../images/icons/expand-more.svg");
+  background-image: url("../images/icons/plus.svg");
+  transform: rotate(0deg);
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
 }
 .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
   color: var(--text-color);
 }
 .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed):after {
-  background-image: url("../images/icons/expand-more.svg");
+  background-image: url("../images/icons/minus.svg");
+  transform: rotate(0deg);
 }
 .accordion .accordion-item .accordion-collapse .accordion-body {
   font-family: "Rufina", Verdana, Geneva, Tahoma, sans-serif;
@@ -23202,6 +23287,7 @@ a.button {
 .section .page-blog {
   padding-top: 56px;
   padding-bottom: 26px;
+  background-color: #FFFFFF;
 }
 .section .section-faq {
   background: var(--color-white-pure);
@@ -23212,7 +23298,6 @@ a.button {
 .section .section-faq .faq-title h3, .section .section-faq .faq-title .h3 {
   font-family: "Rufina", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 56px;
-  text-shadow: 0 8px 3px rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
   margin-bottom: 0;
   color: var(--text-color);
@@ -23642,31 +23727,32 @@ a.button {
   font-size: 24px;
   color: var(--text-color);
   margin-bottom: 24px;
-  text-align: center;
 }
 .section .section-contact .contact p {
   font-size: 16px;
   color: var(--text-color);
   margin-bottom: 16px;
-  text-align: center;
 }
 .section .section-contact .contact a {
   font-size: 16px;
   color: var(--text-color);
-  text-align: center;
   line-height: 1.4;
   transition: 0.3s;
+  text-decoration: none;
 }
 .section .section-contact .contact a:hover {
   color: var(--link-hover-color);
 }
+.section .section-contact .contact ul li {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
 .section .booking {
-  margin-top: -150px;
-  z-index: 1000;
-  position: relative;
-  margin-bottom: 56px;
-  border-radius: 12px;
-  overflow: hidden;
+  padding: 56px 0;
+}
+.section .text-left p {
+  text-align: left;
 }
 .section .section-booking {
   padding: 0;
@@ -23843,6 +23929,7 @@ a.button {
   padding: 16px 24px;
   color: #d2261a;
   border: 1px solid #d2261a;
+  text-decoration: none;
 }
 .section .section-profile .tags .tag:hover {
   background: #d2261a;
@@ -24261,7 +24348,6 @@ body {
 .title h3, .title .h3 {
   font-family: "Rufina", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 56px !important;
-  text-shadow: 0 8px 3px rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
   margin-bottom: 0 !important;
   color: var(--text-color);
